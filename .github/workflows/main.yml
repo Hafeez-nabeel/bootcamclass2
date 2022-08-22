@@ -36,11 +36,11 @@ jobs:
               # Yarn command
           cmd: install
           
-      - name: creatin build
+      - name: creating build
         run: yarn build
           
       - name: installing surge
-        run: npm instal --globa surge
+        run: npm instal --global surge
         
       - name: deploying on surge
         run: surge ./build https://hafeezbootcampreact.surge.sh/ --token ${{ secrets.SURGE_TOKEN1 }}
